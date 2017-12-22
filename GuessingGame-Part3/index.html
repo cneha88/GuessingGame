@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap and CSS here-->
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    
+  </head>
+  <body>
+
+      <div id='app' class= 'container center'>
+
+        <div id='headers' class="text-center">
+          <!-- Title and subtitles! -->
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <h1 id='titles'><strong>PLAY THE GUESSING GAME!</strong></h1>
+          <h3 id='subtitle'><strong><i>Guess a number between 1-100!<i/></strong></h3>
+
+        </div>
+
+        <div id='main'>
+          <div id='input-parent' class = 'text-center'>
+            <!-- Player's guess input, and submit button -->
+            <input id='players-input' class = 'text-center' placeholder="#" maxlength='3'> <button id='submit'  class='btn btn-info'>Go!</button></input>
+      
+            <!--<input type ="button"><input type ="button"><input type ="button"><input type ="button"><input type ="button">-->
+          </div>
+         
+          <div  id='guesses'>
+            <!-- unordered list of guesses -->
+            <ul id='guess-list'>
+              <span class='guess1'>-</span>
+              <span class='guess2'>-</span>
+              <span class='guess3'>-</span>
+              <span class='guess4'>-</span>
+              <span class='guess5'>-</span>
+            </ul>
+            </div>
+            
+
+          <div id="menu-btns" class="text-center">
+            <!-- reset and hint buttons -->
+           <!-- <button id='reset'>Reset</button>-->
+          <!--<
+          <button id='hint'>Hint</button>-->
+
+          <button id= "reset" class="btn btn-warning">Reset</button>
+          <button id= "hint" class="btn btn-danger">Hint</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer' class='center'>
+      <div class='row'>
+        <div class='col-sm-4'>
+          <img src='fullstacklogo.png' align="left"></img>
+        </div>
+
+        <div class='col-sm-4'>
+          <h4 align="center">Project by<br>Neha Choudhary </h4>
+        </div>
+
+        <div class='col-sm-4'>
+          <img src='grace_hopper_academy.png' align="right"></img>
+        </div>
+
+
+      </div>
+    </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+     <script type = "text/javascript" src="GuessingGame.js"></script>
+    
+  </body>
+
+</html>
